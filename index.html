@@ -2,23 +2,208 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShashaAI Legal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ShashaAI</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#09090b;
+    --card:#18181b;
+    --border:#27272a;
+    --text:#fafafa;
+    --muted:#a1a1aa;
+    --accent:#7c3aed;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.7;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(9,9,11,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+}
+
+.nav-inner{
+    max-width:1000px;
+    margin:auto;
+    padding:16px 24px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    color:var(--muted);
+    text-decoration:none;
+}
+
+.nav-links a:hover{
+    color:white;
+}
+
+.hero{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 24px 60px;
+    text-align:center;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:24px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:800;
+    margin-bottom:12px;
+}
+
+.hero p{
+    color:var(--muted);
+    max-width:650px;
+    margin:auto;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:0 24px 80px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:32px;
+    margin-bottom:24px;
+}
+
+.card h2{
+    margin-bottom:12px;
+}
+
+.placeholder{
+    color:var(--muted);
+}
+
+.email{
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+footer{
+    border-top:1px solid var(--border);
+    text-align:center;
+    padding:32px;
+    color:var(--muted);
+}
+</style>
+
 </head>
+
 <body>
-    <h1>ShashaAI</h1>
+
+<nav>
+    <div class="nav-inner">
+        <div class="brand">ShashaAI</div>
 
 ```
-<h2 id="privacy">Privacy Policy</h2>
-<p>Privacy Policy coming soon.</p>
-
-<h2 id="terms">Terms of Service</h2>
-<p>Terms of Service coming soon.</p>
-
-<h2 id="contact">Contact</h2>
-<p>Contact information coming soon.</p>
+    <div class="nav-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
 ```
+
+</nav>
+
+<section class="hero">
+    <img src="logo.png" alt="ShashaAI Logo" class="logo">
+
+```
+<h1>ShashaAI</h1>
+
+<p>
+    Official legal information, privacy policy, terms of service, and support resources for ShashaAI.
+</p>
+```
+
+</section>
+
+<div class="container">
+
+```
+<section id="privacy" class="card">
+    <h2>Privacy Policy</h2>
+    <p class="placeholder">
+        Privacy Policy content coming next.
+    </p>
+</section>
+
+<section id="terms" class="card">
+    <h2>Terms of Service</h2>
+    <p class="placeholder">
+        Terms of Service content coming next.
+    </p>
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact</h2>
+
+    <p>
+        For support, questions, or privacy requests:
+    </p>
+
+    <br>
+
+    <div class="email">
+        support@kampus-link.com
+    </div>
+</section>
+```
+
+</div>
+
+<footer>
+    © 2026 ShashaAI. All rights reserved.
+</footer>
 
 </body>
 </html>
